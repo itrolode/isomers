@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website with Video Background and Autoplay Audio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      text-align: center;
+      padding-top: 20vh;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .audio-player {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Video Background -->
+  <video class="background-video" autoplay muted loop playsinline>
+    <source src="main,slow_and_mp4.mp4" type="video/mp4">
+   weak ahh browser bro, pls change.   
+  </video>
+
+  <!-- Page Content -->
+  <div class="content">
+    <h1>yk if you can see this there is a problem? so close your eyes pls. de nile is a river in egypt.</h1>
+    <p>this website has things</p>
+
+    <div class="audio-player">
+      <audio autoplay loop controls>
+        <source src="happy_bday.mp3" type="audio/mpeg">
+        sucks to be you. i played the audio     you're missing out
+      </audio>
+    </div>
+  </div>
+
+</body>
+</html>
+
